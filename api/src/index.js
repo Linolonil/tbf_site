@@ -4,6 +4,7 @@ import  helmet from 'helmet';
 import  cors from "cors";
 
 const  app = express();
+
 app.use(express.json());
 app.use(cors());
 app.use(helmet());
@@ -15,14 +16,12 @@ import  rotaDadosMongo from "./router/routesDadosMongo.js"
 
 const PORT = process.env.PORT
 
-
-
 app.use("/grupo", rotaDeKdaGrupo);
 app.use("/dados", rotaDadosMongo);
 app.use("/individual", rotaDeKdaIndividual);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT || 3000}`);
 });
 
 

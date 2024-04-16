@@ -23,15 +23,15 @@ export default function InfoKdaIndividual({
 
           if (lastAccessDate !== today) {
             const apiUrlUpdate = import.meta.env.VITE_API_URL_UPDATE_ENV;
-            console.log(apiUrlUpdate);
+
             await axios.get(`${apiUrlUpdate}${id}`);
             localStorage.setItem(`lastAccessDate_${id}`, today);
           }
 
           const apiUrlKda = import.meta.env.VITE_API_URL_KDA_ENV;
 
-          console.log(apiUrlKda);
           const responseKda = await axios.get(`${apiUrlKda}${id}`);
+          console.log(responseKda.data)
 
           if (responseKda.data) {
             const sortedPartidas = responseKda.data.partidas.sort((a, b) => {
