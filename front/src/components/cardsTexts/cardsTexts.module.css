@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'MyVikingFont_cardsTexts_text';
+  src: url('../../assets/font/VikingNormal-36VL.otf') format('woff2');
+ }
+
+ .sobre_text_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+ }
+ 
+ .sobre_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+ }
+ 
+ .sobre_text p {
+  font-family: 'MyVikingFont_cardsTexts_text', Fallback, sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  color: #333;
+  text-align: justify;
+  text-indent: 25px;
+
+ }
+ 
+ 
+
+ .sobre_text_mot {
+  border-radius: 10px 10px 0 0;
+  background-color: transparent;
+  padding: 30px;
+ }
+ 
+ .autor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+ .autor button {
+   width: auto;
+   padding: 15px;
+   font-size: 15px;
+   color: rgb(255, 247, 247);
+   font-family: 'MyVikingFont_cardsTexts_text', Fallback, sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ }
+
+ .autor button:hover{
+  background-color: #b30000;
+  color: #FEFEFE;
+ }
+ 
+ .red{
+  color: red;
+ }
+ 
+ @media screen and (max-width: 1080px) {
+  .sobre_text p {
+    font-size: 1.5rem; /* Tamanho da fonte ajustado para 1.5rem */
+    line-height: 1.8; /* Altura da linha ajustada para 1.8 */
+  }
+  .autor button{
+    font-size: 30px;
+    padding: 30px;
+  
+  }
+  
+ .sobre_text_card {
+  padding:15px;
+ }
+}
+
+@media screen and (max-width: 768px) {
+  .sobre_text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .autor button{
+    font-size: 20px;
+    padding: 30px;
+    border: 1px solid red;
+  
+    border: 1px solid red;
+
+  }
+  
+ .sobre_text_card {
+  padding: 10px;
+ }
+}
+
+@media screen and (max-width: 430px) {
+  .sobre_text p {
+    font-size: 0.6rem;
+    line-height: 1.2;
+  }
+  .autor button{
+    font-size: 15px;
+    padding: 15px;
+  
+  }
+  
+ .sobre_text_card {
+  padding: 5px;
+ }
+}

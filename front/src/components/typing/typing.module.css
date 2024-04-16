@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'MyVikingFont_typing_text';
+  src: url('../../assets/font/VikingNormal-36VL.otf') format('woff2');
+ }
+
+@keyframes borderAnimation {
+  0% {
+    border-color: #b30000;
+  }
+  30% {
+    border-color: #804000;
+  }
+  50% {
+    border-color: #b30000;
+  }
+  80% {
+    border-color: #804000;
+  }
+  100% {
+    border-color: #b30000;
+  }
+}
+
+.card_type_text {
+  text-align: center;
+  color: #b30000;
+  padding: 10px;
+  font-family: 'MyVikingFont_typing_text';
+  filter: drop-shadow(0 0 2px #b30000);
+  transition: all ease-in-out .7s;
+}
+
+.active{
+  border: 2px solid #b30000; 
+  border-radius: 10px; 
+  padding: 20px;
+  animation: borderAnimation 2s infinite; 
+}

@@ -1,0 +1,143 @@
+[
+  {
+    "id": 1,
+    "nome": "Limoeiro",
+    "funcao": "Um jogador versátil, mas às vezes brinca demais nas partidas e seu desempenho oscila, mas quando focado, mostra habilidades impressionantes. Fora do jogo, seu humor lembra o de um cantor ruim.",
+    "gameName": "maokaiobosque",
+    "tagLine": "7248",
+    "elo": "esmeralda",
+    "champion": "/champion/maokai.jpg"  ,
+    "imagem": "/criminosos/Eu.png"
+  },
+  {
+    "id": 2,
+    "nome": "Aiox",
+    "funcao": "O ás do mid, com o maior elo na TBF. Destaca-se com Anivia, frequentemente carregando o time com sua habilidade excepcional. Além disso, é conhecido por sua famosa frase 'Cade meu jg? NA jg poha', que adiciona um toque de humor e expressa sua intensidade em busca da vitória.",
+    "gameName": "aiox",
+    "tagLine": "br1",
+    "elo": "diamante",
+    "champion": "/champion/anivia.jpg"  ,
+    "imagem": "/criminosos/Aiox.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Pira",
+    "funcao": "O pilar otimista do time, sempre eleva o ânimo e a motivação da equipe. Com seu humor peculiar, diverte a todos, especialmente quando fala 'tenho um pick bom hoje'.",
+    "gameName": "tbfraivanssss",
+    "tagLine": "br1",
+    "elo": "ouro",
+    "champion": "/champion/amumu.jpg",
+    "imagem": "/criminosos/pira.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Thales",
+    "funcao": "Sua presença é marcante. Conhecido como o 'psicólogo inverso' da equipe, com uma abordagem única e irônica que mantém o ambiente leve, mesmo nas situações mais desafiadoras.",
+    "gameName": "tbfvingas",
+    "tagLine": "br1",
+    "elo": "ouro",
+    "champion": "/champion/lucian.jpg"  ,
+    "imagem": "/criminosos/Eu.png"
+  },
+  {
+    "id": 5,
+    "nome": "Lari",
+    "funcao": "uma suporte leal e fiel ao seu adc. Seu desempenho brilhante com Galio é notável. Além disso, recentemente, tornou-se mãe do mais novo integrante da TBF, o Benício, mostrando sua habilidade tanto no jogo quanto na vida pessoal",
+    "gameName": "gjlqueriasermain",
+    "tagLine": "br1",
+    "elo": "ouro",
+    "champion": "/champion/galio.jpg"  ,
+    "imagem": "/criminosos/lari.jpg"
+  },
+  {
+    "id": 6,
+    "nome": "Marconha",
+    "funcao": "Marconha brilha como ADC, mas também se destaca na jungle com Kindred. Sua habilidade no jogo é notável, além de ser engraçado, sempre nos divertindo com suas respostas engraçadas, como 'que que eu te fiz pra tu me chamar pra jogar lol?'",
+    "gameName": "marconha",
+    "tagLine": "bala",
+    "elo": "esmeralda",
+    "champion": "/champion/kindred.jpg",
+    "imagem": "/criminosos/marconha.jpg"
+  },
+  {
+    "id": 7,
+    "nome": "Brayan",
+    "funcao": "Jogador da jungle, sempre escolhe Rammus para seus embates. Ele tem uma fixação especial pelo Dragão da Montanha, acreditando que é o 'drag da vitória', trazendo vantagens cruciais para a equipe.",
+    "gameName": "obittencourt",
+    "tagLine": "br1",
+    "elo": "ouro",
+    "champion": "/champion/rammus.jpg" ,
+    "imagem": "/criminosos/Braia.jpg"
+  },
+  {
+    "id": 8,
+    "nome": "Kraudin",
+    "funcao": "Kraudin é um mestre na jungle com seu Nunu psicopata, inspirado pelo jogador Kesha. Ele é conhecido por sempre tacar sua bola em um adversário, enquanto busca incansavelmente a vitória para a equipe.",
+    "gameName": "usuariodowindows",
+    "tagLine": "8749",
+    "elo": "esmeralda",
+    "champion": "/champion/nunu.jpg" ,
+    "imagem": "/criminosos/kraudio.jpg"
+  },
+  {
+    "id": 9,
+    "nome": "Nakawak",
+    "funcao": "O jogador noturno da TBF, destaca-se como ADC de Twitch . Sempre buscando o massacre dos adversários, ele adiciona um toque de gíria, chamando a todos de 'moço'.",
+    "gameName": "ratatouile",
+    "tagLine": "4222",
+    "elo": "platina",
+    "champion": "/champion/rato.jpg"  ,
+    "imagem": "/criminosos/Eu.png"
+  },
+  {
+    "id":10,
+    "nome": "Gar",
+    "funcao" : "Gar, o imponente toplaner, conquista sua rota com maestria, seja com Trundle ou Malphite tank. Sua presença é marcada pela famosa frase de efeito 'Loukura', que não apenas traz leveza ao time, mas também reflete sua determinação em enfrentar desafios.",
+    "gameName": "ishmail",
+    "tagLine": "br1",
+    "elo": "platina",
+    "champion": "/champion/trundle.jpg"  ,
+    "imagem": "/criminosos/gar.jpg"
+  },
+  {
+    "id":11,
+    "nome": "Natália",
+    "funcao" : "Desempenha como ADC ou suporte, traz uma energia intensa para o time. Apesar de sua natureza estressada, ela é uma lutadora incansável pela vitória, frequentemente soltando seu famoso 'fi de rapariga' para motivar a equipe e impulsioná-la rumo ao sucesso",
+    "gameName": "depressedpig",
+    "tagLine": "98551",
+    "elo": "platina",
+    "champion": "/champion/xayah.jpg"  ,
+    "imagem": "/criminosos/natalia.jpg"
+  },
+  {
+    "id":12,
+    "nome": "Willzada",
+    "funcao" : "mesmo sendo um jogador ocasional, joga como suporte, especialmente com Zyra. Sua presença traz um toque de diversão, sempre embalado pelo som de um brega , tornando as partidas ainda mais animadas.",
+    "gameName": "tbfwillzão",
+    "tagLine": "br1",
+    "elo": "ouro",
+    "champion": "/champion/zyra.jpg"  ,
+    "imagem": "/criminosos/will.jpg"
+  },
+  {
+    "id": 13,
+    "nome": "Benício",
+    "funcao": "O mais novo integrante da TBF, ainda não joga League of Legends e nem valorant, mas é o futuro da equipe. Filho do Pira e da Lari.",
+    "gameName": null,
+    "tagLine": null,
+    "elo": null,
+    "champion": "/criminosos/pira.jpg",
+    "imagem": "/criminosos/benicio.jpg"
+},
+  {
+    "id": 14,
+    "nome": "Rafiusque",
+    "funcao": "Rafiusque, novo no time como suporte, destaca-se pela colaboração e busca constante por evolução, promovendo um ambiente positivo e focado na equipe.",
+    "gameName": "raphaelfontes",
+    "tagLine": "br1",
+    "elo": "provisorio",
+    "champion": "/champion/taric.jpg",
+    "imagem": "/criminosos/rafiusque.jpg"
+}
+
+]

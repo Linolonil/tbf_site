@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'My';
+  src: url('../../assets/font/NorseBold-2Kge.otf') format('woff2');
+}
+.eventos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.timerItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timerItem span {
+  font-size: 24px;
+  font-family: 'My', Fallback, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: #d61414;
+  white-space: nowrap; 
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+  .timerItem span {
+    font-size: 45px;
+    color: #d61414;
+  }
+}
+@media screen and (max-width: 768px) {
+  .timerItem span {
+    font-size: 22px;
+    color: #d61414;
+  }
+}
+@media screen and (max-width: 430px) {
+  .timerItem span {
+    font-size: 10px;
+ 
+    color: #d61414;
+  }
+}

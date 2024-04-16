@@ -1,0 +1,19 @@
+
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: #6a6a6a;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, transparent, #ff0000
+  ,transparent ) 1;  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.footer h4{
+  color: #fff;
+}

@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'MyVikingFont_sobre_text';
+  src: url('../../assets/font/VikingNormal-36VL.otf') format('woff2');
+}
+
+.contatos{
+  width: 100%;
+  display: flex;
+  padding: calc(1vh + 45px ) 0;
+
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contatos_card{
+  width: 97%;
+  padding: 30px;
+
+  border: 20px solid;
+  border-image: url('../../../public/borda.png') 50 round;
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contatos h2{
+  color: #000;
+  font-family: 'MyVikingFont_sobre_text', Fallback, sans-serif ;
+  margin-bottom: 30px;
+}
+
+.contatos_list{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+
+}
+.contatos_list h4, p{
+  color: #000;
+  text-align: center;
+  font-family: 'MyVikingFont_sobre_text', Fallback, sans-serif ;
+
+}
+.contatos_list h4::first-letter{
+  color:#b30000ba;
+}
+.contatos_list div a{
+  text-decoration: none;
+  color: #000;
+}
+.contatos_list div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+
+.intro_text_tbf{
+  color:#b30000ba;
+  filter: drop-shadow(0 0 2px  #b30000);
+  font-family: 'MyVikingFont_sobre_text', Fallback, sans-serif ;
+
+}
+
+@media screen and (max-width: 1080px) {
+  .contatos_card{
+    border: 60px solid;
+    border-image: url('../../../public/borda.png') 50 round;
+  }
+  .contatos_list{
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contatos_card{
+    border: 40px solid;
+    border-image: url('../../../public/borda.png') 50 round;
+  }
+  .contatos_list{
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .contatos_card{
+    border: 30px solid;
+    border-image: url('../../../public/borda.png') 50 round;
+  }
+  .contatos_list{
+    flex-direction: column;
+    gap: 50px;
+  }
+}

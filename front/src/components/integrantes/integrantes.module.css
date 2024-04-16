@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'MyVikingFont_sobre_text';
+  src: url('../../assets/font/VikingNormal-36VL.otf') format('woff2');
+}
+@font-face {
+  font-family: 'MyVikingFont_integrantes_text';
+  src: url('../../assets/font/VikingNormal-36VL.otf') format('woff2');
+}
+
+.integrantes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: calc(1vh + 45px ) 0;
+  
+}
+
+.integrantes_card{
+  width: 97%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.integrantes_title {
+  margin-bottom: 30px;
+}
+
+.integrantes_title h2{
+  font-family: 'MyVikingFont_sobre', Fallback, sans-serif ;
+  font-weight: 900;
+  color: #000;
+}
+
+.intro_text_tbf{
+  color:#b30000ba;
+  filter: drop-shadow(0.5px 1px 4px  #b30000);
+
+}
+
+
+@media screen and (max-width: 1080px) {
+  .integrantes_title h2{
+   font-size: 40px;
+  }
+
+ }
+ @media screen and (max-width: 768px) {
+  .integrantes_title h2{
+     font-size: 35px;
+    }
+ }
+ @media screen and (max-width: 430px) {
+   .integrantes_title h2{
+     font-size: 30px;
+    }
+ }

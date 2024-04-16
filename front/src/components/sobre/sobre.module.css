@@ -1,0 +1,5 @@
+
+  .cards{
+    border: 20px solid ;
+    border-image: url('../../../public/borda.png') 50 round ;
+   }
