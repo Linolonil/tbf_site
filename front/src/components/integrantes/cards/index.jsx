@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import CardIntegrantes from "../cardIntegrantes";
+import CardIntegrantes from "./cardIntegrantes";
 
 export default function Cards() {
   const [integrantesData, setIntegrantesData] = useState([]);
@@ -24,22 +24,22 @@ export default function Cards() {
     fetchData();
   }, []);
 
-  console.log(integrantesData)
 
   return (
     <div
       className={` w-full h-auto p-2.5 flex justify-center items-center flex-wrap gap-7 box-border bg-transparent`}
     >
       {isLoading ? (
-        <div className="flex justify-center items-center h-20 text-lg text-gray-500">
+        <div className="flex justify-center items-center lg:h-96 md:h-96 h-96 text-lg">
+
           <div className="loader">
             <div className="loader_square"></div>
             <div className="loader_square"></div>
             <div className="loader_square"></div>
+            <div className="loader_square "></div>
             <div className="loader_square"></div>
             <div className="loader_square"></div>
-            <div className="loader_square"></div>
-            <div className="loader_square"></div>
+            <div className="loader_square "></div>
           </div>
         </div>
       ) : (

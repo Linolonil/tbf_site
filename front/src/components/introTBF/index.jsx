@@ -1,6 +1,6 @@
 import { useState } from "react";
 import viking from "../../assets/viking.png";
-import MusicPlayer from "../musicaIntro";
+import MusicPlayer from './musicaIntro';
 import styles from './introTBF.module.css'
 
 function IntroTBF() {

@@ -9,7 +9,7 @@ import IntroTBF from './../../components/introTBF/index';
 export default function Home(){
   return(
   <>
-      <Navbar/>
+       <Navbar/>
        <IntroTBF/>
        <Sobre/>
        <Integrantes/>

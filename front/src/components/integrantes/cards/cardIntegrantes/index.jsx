@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './Card.module.css';
 import PropTypes from 'prop-types';
-import InfoKdaIndividual from './../fetchPlayerInfo/index';
+import InfoKdaIndividual from './fetchPlayerInfo';
 import { ToastContainer } from 'react-toastify';
 
 export default function CardIntegrantes({id, name, funcao ,imagem ,champion }) {

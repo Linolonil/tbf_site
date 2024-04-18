@@ -70,58 +70,63 @@ export default function InfoKdaIndividual({
   return (
     <>
       {openModal && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 rounded-[20px]">
-          <div className="bg-black w-full h-full rounded-[20px]">
-            <div className="overflow-y-auto h-full">
+        <div className="absolute  inset-0 flex items-center justify-center bg-black  z-50 rounded-[20px] ">
               {loading && (
-                <div className="absolute inset-0 bg-black flex items-center justify-center rounded-[20px] z-10">
+                <div className="absolute inset-0 bg-black flex items-center justify-center rounded-[20px] z-10 ">
                   <div className="loader">
-                    <div className="loader_square"></div>
-                    <div className="loader_square"></div>
-                    <div className="loader_square"></div>
-                    <div className="loader_square"></div>
-                    <div className="loader_square"></div>
-                    <div className="loader_square"></div>
-                    <div className="loader_square"></div>
+                    <div className="loader_square bg-white"></div>
+                    <div className="loader_square bg-white"></div>
+                    <div className="loader_square bg-white"></div>
+                    <div className="loader_square bg-white"></div>
+                    <div className="loader_square bg-white"></div>
+                    <div className="loader_square bg-white"></div>
+                    <div className="loader_square bg-white"></div>
                   </div>
                 </div>
               )}
               {playerInfo && !loading && (
-                <div className="w-full h-full flex  justify-center items-center flex-col border rounded-[20px] pb-10">
-                  <h2 className="text-xl font-bold mb-4">{name}</h2>
-                  <h3 className="mt-4 mb-2 text-lg font-semibold">
+                <div className="w-full h-full  flex  bg-gray-400 justify-center items-center flex-col rounded-[20px] pb-10">
+                  <h2 className="text-xl font-bold mb-4 text-black">{name}</h2>
+                  <caption className="caption-top text-black">
                     Últimas 10 melhores partidas:
-                  </h3>
-                  <div className="overflow-auto p-10">
-                    <table className="table w-full">
-                      <thead>
+                  </caption>
+                  <div className="relative overflow-auto p-2">
+                    <table className="table-auto w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                      <thead className="text-xs text-gray-700 uppercase bg-gray-400 dark:bg-gray-700 dark:text-gray-400">
                         <tr>
-                          <th className="border px-4 py-2 text-center">Data</th>
-                          <th className="border px-4 py-2 text-center">
+                          <th  scope="col"></th>
+                          <th className="px-6 py-3 text-center text-black  font-bold" scope="col">Data</th>
+                          <th className="px-6 py-3 text-center  text-black font-bold" scope="col">
                             K/D/A
                           </th>
-                          <th className="border px-4 py-2 text-center">
+                          <th className="px-6 py-3 text-center  text-black font-bold" scope="col">
                             Média
                           </th>
+                          <th  scope="col"></th>
+
                         </tr>
                       </thead>
                       <tbody>
                         {playerInfo.partidas.map((partida, index) => (
-                          <tr key={index}>
-                            <td className="border px-4 py-2 text-center">
+                          <tr className="bg-gray-400 border-b dark:bg-gray-800 dark:border-gray-700"  key={index}>
+                            <td className="px-4 py-4" scope="col">
+                            </td>
+                            <td className="px-6 py-4 text-center text-black font-semibold" scope="col">
                               {formatDate(partida.gameStartTime)}
                             </td>
-                            <td className="border px-4 py-2 text-center">
+                            <td className="px-6 py-4 text-center text-black font-semibold">
                               {partida.kda.kills}/{partida.kda.deaths}/
                               {partida.kda.assists}
                             </td>
-                            <td className="border px-4 py-2 text-center">
+                            <td className="px-6 py-4 text-center text-black font-semibold">
                               {(
                                 (partida.kda.kills + partida.kda.assists) /
                                 (partida.kda.deaths == 0
                                   ? 1
                                   : partida.kda.deaths)
                               ).toFixed(2)}
+                            </td>
+                            <td className="px-4 py-4" scope="col">
                             </td>
                           </tr>
                         ))}
@@ -130,14 +135,13 @@ export default function InfoKdaIndividual({
                   </div>
                 </div>
               )}
-            </div>
+            
             <button
               onClick={fecharModal}
               className="absolute top-0 right-0 mt-4 mr-4 text-white hover:text-red-700 hover:bg-white border p-2 rounded cursor-pointer"
             >
               Fechar
             </button>
-          </div>
         </div>
       )}
     </>

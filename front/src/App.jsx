@@ -1,5 +1,6 @@
 import './App.css'
 import Home from './page/Home'
+import 'flowbite/dist/flowbite.min.css';
 
 function App() {
 

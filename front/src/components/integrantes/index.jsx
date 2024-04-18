@@ -1,4 +1,4 @@
-import Cards from '../cards';
+import Cards from './cards';
 
 export default function Integrantes() {
 

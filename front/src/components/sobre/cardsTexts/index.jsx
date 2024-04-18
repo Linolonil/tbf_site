@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import TypeWriter from '../typing';
+import TypeWriter from './typing';
 
 // eslint-disable-next-line react/prop-types
 export default function CardsTexts({ modalOpen, toggleModal }) {

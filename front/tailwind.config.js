@@ -1,15 +1,17 @@
-/** @type {import('tailwindcss').Config} */
+import flowbitePlugin from 'flowbite/plugin';
+
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    'node_modules/flowbite-react/lib/esm/**/*.js'
+
   ],
   theme: {
-    
     fontFamily: {
-    'MyVikingFont': 'MyVikingFont',
-    'MyVikingFont-title': 'MyVikingFont_title',
-    'sans': ['ui-sans-serif', 'system-ui']
+      'MyVikingFont': 'MyVikingFont',
+      'MyVikingFont-title': 'MyVikingFont_title',
+      'sans': ['ui-sans-serif', 'system-ui']
     },
     extend: {
       dropShadow: {
@@ -19,10 +21,10 @@ export default {
       },
       backgroundImage: {
         'hero-pattern': "url('./public/back-transformed.jpeg')",
-        }
-
+      }
     }
   },
-  plugins: [],
-}
-
+  plugins: [  
+    flowbitePlugin
+  ],
+};

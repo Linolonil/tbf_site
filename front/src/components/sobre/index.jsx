@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import tbfHistory from '../../assets/tbf-historia.jpg';
-import CardsTexts from '../cardsTexts/index';
+import CardsTexts from './cardsTexts/index';
 
 export default function Sobre() {
   const [isModalOpen, setIsModalOpen] = useState(false);

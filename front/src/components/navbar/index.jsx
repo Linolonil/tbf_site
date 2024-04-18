@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import viking from "../../assets/viking.png";
-import EventosModal from "../eventos";
+import EventosModal from "./eventos";
 
 const Navbar = () => {
   const [currentSection, setCurrentSection] = useState("");
