@@ -9,6 +9,8 @@ const buscarInfoCriminosos = async(req, res) =>{
         const result = itens.map(item => ({
             id: item._id,
             nome: item.nome,
+            elo: item.elo,
+            rank:item.rank,
             funcao: item.funcao,
             gameName: item.gameName,
             tagLine: item.tagLine,

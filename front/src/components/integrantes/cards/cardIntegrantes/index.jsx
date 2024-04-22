@@ -4,17 +4,13 @@ import PropTypes from 'prop-types';
 import InfoKdaIndividual from './fetchPlayerInfo';
 import { ToastContainer } from 'react-toastify';
 
-export default function CardIntegrantes({id, name, funcao ,imagem ,champion }) {
+export default function CardIntegrantes({id, name, funcao ,imagem ,champion, elo, rank }) {
   const [modalAberto, setModalAberto] = useState(false);
 
-
-
-  // Função para abrir o modal
   const abrirModal = () => {
     setModalAberto(true);
   };
 
-  // Função para fechar o modal
   const fecharModal = () => {
     setModalAberto(false);
   };
@@ -33,7 +29,7 @@ export default function CardIntegrantes({id, name, funcao ,imagem ,champion }) {
           </div>
           <div className={styles.genre}></div>
           <a  className={styles.btn} onClick={abrirModal}>desempenho individual</a>
-          <InfoKdaIndividual id={id} name={name} openModal={modalAberto} fecharModal={fecharModal} />
+          <InfoKdaIndividual id={id} name={name} elo={elo} rank={rank} openModal={modalAberto} fecharModal={fecharModal} />
         </div>            
       </div>
       <ToastContainer/>
@@ -44,6 +40,8 @@ export default function CardIntegrantes({id, name, funcao ,imagem ,champion }) {
 CardIntegrantes.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  elo: PropTypes.string.isRequired,
+  rank: PropTypes.string.isRequired,
   funcao: PropTypes.string.isRequired,
   imagem: PropTypes.string.isRequired,
   champion: PropTypes.string.isRequired,

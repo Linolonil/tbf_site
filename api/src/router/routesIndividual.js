@@ -13,5 +13,6 @@ router.get("/detalhes-partidas/individual/:id", individualController.getInfoIndi
 
 
 router.post("/detalhes-partidas/criar", individualController.postPartidas)
+router.put("/detalhes-partidas/atualizaElo/:id", individualController.postElo)
 
 export default router;

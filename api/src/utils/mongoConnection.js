@@ -37,7 +37,7 @@ const mongoResults = async () => {
   const collectionResults = db.collection(collectionName);
 
   console.info("Conectando ao banco de dados...");
-  console.info("Banco de dados conectado com sucesso!");
+  console.info("Banco de criminosos!");
 
   return { collection: collectionResults };
 };

@@ -50,6 +50,8 @@ export default function Cards() {
               <CardIntegrantes
                 id={integrante.id}
                 name={integrante.nome}
+                elo={integrante.elo}
+                rank={integrante.rank}
                 funcao={integrante.funcao}
                 imagem={integrante.image}
                 champion={integrante.champion}
